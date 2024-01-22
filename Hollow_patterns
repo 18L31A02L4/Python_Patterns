@@ -1,0 +1,185 @@
+rows = 4
+
+# HOLLOW  TRIANGLE
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        if i == rows or j == 1 or j == i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+# HOLLOW INVERTED TRIANGLE
+for i in range(rows, 0, -1):
+    for j in range(1, i + 1):
+        if i == rows or j == 1 or j == i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+# HOLLOW RIGHT SIDED TRIANGLE
+for i in range(1, rows+1):
+    print("  "*(rows-i), end="")
+    for j in range(1, i+1):
+        if i == rows or j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+# HOLLOW INVERTED RIGHT SIDED TRIANGLE
+for i in range(rows, 0, -1):
+    print("  " * (rows - i), end="")
+    for j in range(1, i+1):
+        if i == rows or j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+# PYRAMID
+for i in range(1, rows+1):
+    print(" " * (rows - i), end="")
+    for j in range(1, i+1):
+        if i == rows or j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+# INVERTED PYRAMID
+for i in range(rows, 0, -1):
+    print(" " * (rows - i), end="")
+    for j in range(1, i+1):
+        if i == rows or j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+#  HOLLOW LEFT PASCAL TRIANGLE
+for i in range(1, rows+1):
+    for j in range(1, i + 1):
+        if j == 1 or j == i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+for i in range(rows-1, 0, -1):
+    for j in range(1, i + 1):
+        if i == rows or j == 1 or j == i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+#  HOLLOW RIGHT PASCAL TRIANGLE
+for i in range(1, rows+1):
+    print("  "*(rows-i), end="")
+    for j in range(1, i+1):
+        if j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+for i in range(rows-1, 0, -1):
+    print("  "*(rows-i), end="")
+    for j in range(1, i+1):
+        if i == rows or j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+# HOLLOW DIAMOND
+for i in range(1, rows+1):
+    print(" "*(rows-i), end="")
+    for j in range(1, i+1):
+        if j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+for i in range(rows-1, 0, -1):
+    print(" "*(rows-i), end="")
+    for j in range(1, i+1):
+        if i == rows or j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+# HOLLOW SAND GLASS
+for i in range(rows, 0, -1):
+    print(" "*(rows-i), end="")
+    for j in range(1, i+1):
+        if i == rows or j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+for i in range(2, rows+1):
+    print(" "*(rows-i), end="")
+    for j in range(1, i+1):
+        if i == rows or j == 1 or j == i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+# HOLLOW SQUARE
+for i in range(rows):
+    for j in range(rows):
+        if i == 0 or i == rows - 1 or j == 0 or j == rows - 1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
+# PLUS SYMBOL
+n = 5
+for i in range(n):
+    for j in range(n):
+        if i == n // 2 or j == n // 2:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+print("-------------------------")
+
+# -------------------------------------------------------------------------------------------
